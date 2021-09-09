@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADONIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="home">
+        <canvas class="canva" id="canvas"></canvas>
+        <nav class="overlay">
+            <ul class="nav-cont">
+                <li class="nav">
+                    <a href="about-me/about-me.html"><img src="images/about-me.gif" alt="" class="about-me-gif"> </a>
+                </li>
+                <li>
+                    <a href="graphics/graphics.html"><img src="images/graphics.gif" alt="" class="about-me-gif"></a>
+                </li class="nav">
+                <li class="nav">
+                    <a href="game/game.html"><img src="images/game.gif" alt="" class="about-me-gif"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="loader-wrapper">
+        
+    <span class="loader"><span class="loader-inner">
+        <img src="images/adonis.gif" alt="" width="100%" class="bigger">
+    </span>
+    </div>
+
+    <script>
+        let loaderWrapper = document.querySelector('.loader-wrapper')
+
+        window.addEventListener('load', function(){
+            setTimeout(function(){
+                loaderWrapper.style.display = "none";}, 2000);
+        })
+        
+    </script>
+    <script src="App.js"></script>
+</body>
+</html>

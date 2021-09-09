@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lateef", Helvetica;
+    color: white;
+}
+
+
+.home{
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+ul{
+    font-size: 20px;
+    padding: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    list-style-type: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+li{
+    text-decoration: none;
+}
+
+
+
+.video{
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 5s infinite;
+
+}
+
+.loader-wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.fade-in{
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes loader {
+  0% {
+  }
+  100%{
+  }
+}
+
+.about-me-gif{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.nav-cont{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.canva{
+    min-height: 100vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
