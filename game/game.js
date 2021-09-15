@@ -58,9 +58,7 @@ function animate(){
 
 
 
-// begin.addEventListener(onclick, animate())
-
-
+animate();
 
 
 
