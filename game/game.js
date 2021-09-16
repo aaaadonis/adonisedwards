@@ -29,11 +29,11 @@ canvas.height = innerHeight;
 canvas.style.backgroundColor = 'black';
 
 function drawSneakers(round){
-    start = 5 + round;
+    start = 10 + round;
     for (let i = 0; i < start; i++) {
       ctx.drawImage(
         Imgs[Math.floor(Math.random() * 3)],
-        (Math.random() * canvas.width) - 50,
+        (Math.random() * canvas.width),
         Math.floor(Math.random() * canvas.height) + 200,
         100,
         100
@@ -48,28 +48,40 @@ function drawSneakers(round){
     );
 }
 
-function animate(){
+function animate(turn){
+  setTimeout(() =>{
     ctx.drawImage(Img1, canvas.width/2.3, canvas.height * .08, 150, 100);
-    drawSneakers(0);
-
-    requestAnimationFrame(animate);
-
+    drawSneakers(turn)}
+    , 50)
 }
 
 
 
-animate();
 
 
+let gameRound = 0;
+
+let isClicked = false;
+Img1.addEventListener(onclick, function(){
+  if(isClicked == false){
+    isClicked = true;
+  }else{
+    isClicked = false;
+  }
+});
 
 
+let play = (isGoing) =>{
+  animate(0);
+  while(isGoing){
+    if(isClicked){
+      gameRound += 5
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      animate(gameRound)
+    }else{
+      isGoing = false;
+    }
+  }
+}
 
-
-
-
-
-/* Spawn Images randomly on grid
-
-
-
-*/
+play(true);

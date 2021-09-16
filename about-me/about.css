@@ -99,6 +99,7 @@ h1::after{
 }
 
 .me p{
+    font-weight: lighter;
     text-align: center;
     font-size: 1.5em;
     margin: 0 auto;
@@ -189,6 +190,16 @@ button{
 }
 
 button:hover{
-    background: black;
+    background: white;
     color: white;
 }
+
+
+.works img{
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.works img:hover{
+    transform: scale(0.9);
+}
+
