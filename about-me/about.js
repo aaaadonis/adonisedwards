@@ -1,5 +1,15 @@
 const text = document.querySelector(".circular-text .text");
 const rotate = new CircleType(text).radius(80);
+const hardies = document.getElementById("hardies");
+const chill = document.getElementById("chill");
+
+hardies.addEventListener("click", function(){
+    window.location.href = "www.hardieshardware.com";
+})
+
+chill.addEventListener("click", function(){
+    window.location.href = "www.c-h-i-l-l/#/.com";
+})
 
 window.addEventListener("scroll", function () {
     text.style.transform = `rotate(${window.scrollY * .15}deg)`;
