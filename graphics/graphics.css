@@ -48,8 +48,9 @@ body{
 
 .gfx{
     margin: 4% auto;
-    max-width: 55%;
+    width: 55%;
     height: auto;
+    max-width: 100%;
 }
 
 
