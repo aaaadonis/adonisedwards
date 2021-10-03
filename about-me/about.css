@@ -106,7 +106,7 @@ h1::after{
     text-align: center;
     font-size: 1.2em;
     margin: 0 auto;
-    font-family: Arial;
+    font-family: Helvetica;
 }
 
 
@@ -124,7 +124,7 @@ h1::after{
 }
 
 .text{
-    font-family: Arial;
+    font-family: Helvetica;
     line-height: 1.3;
     font-weight: 700;
     font-size: 1em;
