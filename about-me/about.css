@@ -211,6 +211,7 @@ li{
 }
 
 .works-flex p{
+    font-family: Helvetica;
     color: white;
     font-size: 1em;
 }
