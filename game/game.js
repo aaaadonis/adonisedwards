@@ -62,7 +62,7 @@ function animate(turn){
 let gameRound = 0;
 
 let isClicked = false;
-Img1.addEventListener(onclick, function(){
+canvas.addEventListener(onclick, function(){
   if(isClicked == false){
     isClicked = true;
   }else{

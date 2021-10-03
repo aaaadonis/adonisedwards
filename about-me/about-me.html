@@ -9,28 +9,37 @@
     <title>About Me</title>
 </head>
 <body>
-    <div class="cover">
+    <div class="cover" id="monster">
     <h1>Hello, I'm Adonis.</h1>
     <p class="subtitle">Welcome to the About Me section of my site.</p>
     </div>
 
-    <div class="me">
+    <div class="me fade">
         <p>
             I'm a Web Developer with love for <br>multimedia design on all fronts.
         </p>
         <img src="../images/temp.jpeg" alt="" class="temp">
     </div>
     
-    <div class="previous-works">
-        <div class="works">
-            <img src="../images/hardies.png" alt="" id="hardies">
-            <img src="../images/chill.png" alt="" id="chill">
+    <div class="previous-works fade">
+
+
+        <ul class="works-flex">
             <p>Previous Works</p>
-        </div>
+            <li><a href="https://www.hardieshardware.com"><img src="../images/hardies.png" alt="" id="hardies"></a></li>
+            <li><a href="http://www.c-h-i-l-l.us/#/"><img src="../images/chill.png" alt="" id="chill"></a></li>
+        </ul>
     </div>
 
-    <div class="contact">
-        <p>Contact Me!</p>
+    <div class="contact fade">
+        <p>Email me - @adonisedwards11@gmail.com</p>
+        <div class="footer-imgs">
+
+                <a href="https://www.linkedin.com/in/adonis-edwards/"><img src="../images/linkedin.png" alt="" class="linkedin"></a>
+
+        </div>
+
+        <!-- <p>Contact Me!</p>
         <div class="contact-me">
         <form action="https://formspree.io/f/mayavejo" method="POST" class="form">
             <label for="">
@@ -47,7 +56,7 @@
                 Send
             </button>
         </form>
-        </div>
+        </div> -->
     </div>
 
         <div class="container">
@@ -62,4 +71,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
 <script src="about.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </html>

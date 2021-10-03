@@ -1,44 +1,34 @@
 const text = document.querySelector(".circular-text .text");
 const rotate = new CircleType(text).radius(80);
-const hardies = document.getElementById("hardies");
-const chill = document.getElementById("chill");
-
-hardies.addEventListener("click", function(){
-    window.location.href = "www.hardieshardware.com";
-})
-
-chill.addEventListener("click", function(){
-    window.location.href = "www.c-h-i-l-l/#/.com";
-})
 
 window.addEventListener("scroll", function () {
     text.style.transform = `rotate(${window.scrollY * .15}deg)`;
 });
 
-// $(document).ready(function(){
-//     $(".submit").click(function (event){
+$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
 
-//         let email = $('.email').val()
-//         let subject = $(".subject").val();
-//         let message = $(".message").val();
-//         let status = $(".status");
-//         status.empty();
-
-//         if(email.length > 5 && email.includes('@') && email.includes('.')){
-//             true;
-//         }else{
-//             event.preventDefault();
-//             status.append("<div>Email is not valid</div>");
-//         }
-
-//         if(subject.length < 2){
-//             event.preventDefault();
-//             status.append("<div>Subject is not valid</div>");
-//         }
-
-//         if(message.length < 10){
-//             event.preventDefault();
-//             status.append("<div>Message is too short.</div>");
-//         }
-//     });
-// })
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() +100;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
