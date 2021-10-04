@@ -95,7 +95,10 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
-    img{
-        width: auto;
+    .img-container1 img:hover{
+        margin-bottom: 20%;
+    }
+    .img-container2 img:hover{
+        margin-bottom: 10%;
     }
 }
