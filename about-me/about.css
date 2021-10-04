@@ -9,6 +9,7 @@
 
 body{
     background:black;
+    max-width: 100vw;
 }
 
 .previous-works{
