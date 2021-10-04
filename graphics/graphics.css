@@ -70,6 +70,7 @@ body{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
+  padding: 5% auto;
 }
 
 .img-container:hover .overlay {
@@ -86,7 +87,7 @@ body{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 5%;
+  padding: 5% auto;
 }
 
 #desc-5{
